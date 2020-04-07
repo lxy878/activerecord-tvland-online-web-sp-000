@@ -1,9 +1,9 @@
 class CreateCharactors < ActiveRecord::Migration[5.1]
   def change
     create_table :characters do |t|
-      :name
-      :actor_id
-      :show_id
+      t.string :name
+      t.integer :actor_id
+      t.integer :show_id
     end
   end
 end
